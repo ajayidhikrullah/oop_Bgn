@@ -9,9 +9,16 @@
 <body>
     <?php
 include "includes/newClass.inc.php";
-$instantiateClassPetMethod = new Pet();
-echo $instantiateClassPetMethod->owner();
 
+// $instantiateClassPetMethod = new Pet();
+// echo $instantiateClassPetMethod->owner();
+
+
+// instatiating the MyDetails class, calling the properties using THIS inbuilt function
+$instantiateMyDetailsClass = new MyDetails();
+
+//access the properties via the method or function in the Class
+echo $instantiateMyDetailsClass->OwnerProp();
 
 
 
