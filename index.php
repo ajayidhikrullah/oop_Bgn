@@ -7,6 +7,7 @@
     <title>OOP</title>
 </head>
 <body>
+    
     <?php
 include "includes/newClass.inc.php";
 
@@ -15,10 +16,27 @@ include "includes/newClass.inc.php";
 
 
 // instatiating the MyDetails class, calling the properties using THIS inbuilt function
-$instantiateMyDetailsClass = new MyDetails();
+// $instantiateMyDetailsClass = new MyDetails();
 
 //access the properties via the method or function in the Class
-echo $instantiateMyDetailsClass->OwnerProp();
+// echo $instantiateMyDetailsClass->firstName;
+
+
+// ===============================
+// using one class to create many objects or instances.
+
+$person1 = new Person();
+
+$person1->bedTime('3:00pm');
+echo $person1->sleepTime;
+
+
+$person2 = new Person();
+
+$person2->bedTime('5:00am');
+echo "<br>";
+echo $person2->sleepTime;
+
 
 
 
