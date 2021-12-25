@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php
-        $
+include "includes/newClass.inc.php";
+$instantiateClassPetMethod = new Pet();
+echo $instantiateClassPetMethod->owner();
 
 
 

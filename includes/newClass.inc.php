@@ -1,13 +1,18 @@
 <?php
 class NewClass {
     // properties goes in here + Methods
-    public $info = 'Some Informations goes here...';
+    private $firstName = 'Dhikrullah';
+    private $lastName = 'Ajayi';
+    private $age = '16';
 
 }
 
-//this is how to instantiate a class i.e: call a class
 
-$instantiateClass = new NewClass;
-var_dump($instantiateClass);
-
-
+class Pet {
+    // this is a method or function
+    public function owner() {
+        $petTone = 'Meow';
+        return $petTone;
+    }
+    
+}
