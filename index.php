@@ -44,10 +44,19 @@ echo $person2->sleepTime;
 
 // $personSleeping = new Person();
 // echo $personSleeping->$sleepAge;
-
+/*
         echo Person::$sleepAge;
         echo Person::setSleepAge(33);
         echo Person::$sleepAge;
+
+*/
+// ==============================================
+// Construct and destruct
+$school2 = new School("Baba School", 'White and Blue', 'Science');
+
+// echo $school1->cl;
+echo $school2->departments;
+
 
 
     ?>

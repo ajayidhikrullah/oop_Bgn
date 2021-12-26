@@ -34,6 +34,8 @@ class MyDetails {
 
 
     //using one class to create many objects
+
+    /*
     class Person{
         public $age;
         public $name;
@@ -47,6 +49,7 @@ class MyDetails {
         */
 
 
+/*
 
         // static method and properties
         public static $sleepAge = 32;
@@ -58,8 +61,22 @@ class MyDetails {
 
         }
 
-    }
+    }*/
 
+
+    class School{
+        public $classes;
+        public $uniformColor;
+        public $departments;
+    
+        public function __construct($classes, $uniformColor, $departments){
+            $this->cl = $classes;
+            $this->uniformColor = $uniformColor;
+            $this->departments = $departments;
+        }
+    
+    }
+    
 
 
 ?>
