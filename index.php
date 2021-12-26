@@ -7,7 +7,7 @@
     <title>OOP</title>
 </head>
 <body>
-    
+
     <?php
 include "includes/newClass.inc.php";
 
@@ -25,6 +25,7 @@ include "includes/newClass.inc.php";
 // ===============================
 // using one class to create many objects or instances.
 
+/*
 $person1 = new Person();
 
 $person1->bedTime('3:00pm');
@@ -37,7 +38,16 @@ $person2->bedTime('5:00am');
 echo "<br>";
 echo $person2->sleepTime;
 
+*/
 
+// static methods and properties
+
+// $personSleeping = new Person();
+// echo $personSleeping->$sleepAge;
+
+        echo Person::$sleepAge;
+        echo Person::setSleepAge(33);
+        echo Person::$sleepAge;
 
 
     ?>

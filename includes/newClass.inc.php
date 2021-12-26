@@ -40,8 +40,22 @@ class MyDetails {
         public $address;
         public $sleepTime;
 
+        /*
         public function bedTime($sleepTime) {
             $this->sleepTime = $sleepTime;
+        }
+        */
+
+
+
+        // static method and properties
+        public static $sleepAge = 32;
+
+        // methods
+        public static function setSleepAge($newSleepAge){
+            self::$sleepAge = $newSleepAge;
+
+
         }
 
     }
