@@ -65,16 +65,25 @@ class MyDetails {
 
 
     class School{
-        public $classes;
+        public $class;
         public $uniformColor;
         public $departments;
     
-        public function __construct($classes, $uniformColor, $departments){
-            $this->cl = $classes;
+        public function __construct($c, $uniformColor, $departments){
+            $this->classes = $c;
             $this->uniformColor = $uniformColor;
             $this->departments = $departments;
         }
+
+        // methods
+        public function switchSchoolDept($dept){
+            $this->dept = $dept;
+
+        }
     
+
+
+
     }
     
 

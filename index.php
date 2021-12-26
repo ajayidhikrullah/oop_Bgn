@@ -52,10 +52,13 @@ echo $person2->sleepTime;
 */
 // ==============================================
 // Construct and destruct
-$school2 = new School("Baba School", 'White and Blue', 'Science');
+$school1 = new School("Baba School", 'White and Blue', 'Science');
 
-// echo $school1->cl;
-echo $school2->departments;
+echo $school1->uniformColor;
+// echo $school2->departments;
+
+$school1->switchSchoolDept('Commercial');
+echo $school1->dept;
 
 
 
