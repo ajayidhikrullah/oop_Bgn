@@ -61,7 +61,7 @@ class MyDetails {
 
         }
 
-    }*/
+    }
 
 
     class School{
@@ -86,6 +86,19 @@ class MyDetails {
 
     }
     
+*/
+
+
+
+
+
+// AUTOLOAD CLASSES
+
+
+
+
+
+
 
 
 ?>

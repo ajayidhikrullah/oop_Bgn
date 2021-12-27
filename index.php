@@ -1,3 +1,15 @@
+<?php
+
+
+?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +21,9 @@
 <body>
 
     <?php
-include "includes/newClass.inc.php";
+// include "includes/newClass.inc.php";
+include 'classes/person.cls.php';
+include 'classes/house.cls.php';
 
 // $instantiateClassPetMethod = new Pet();
 // echo $instantiateClassPetMethod->owner();
@@ -49,7 +63,7 @@ echo $person2->sleepTime;
         echo Person::setSleepAge(33);
         echo Person::$sleepAge;
 
-*/
+
 // ==============================================
 // Construct and destruct
 $school1 = new School("Baba School", 'White and Blue', 'Science');
@@ -60,6 +74,21 @@ echo $school1->uniformColor;
 $school1->switchSchoolDept('Commercial');
 echo $school1->dept;
 
+*/
+
+
+
+
+//autoload Classes
+$person1 = new Person('DHikrullah', 16);
+echo $person1->getPerson(); //should echo out - DHikrullahis 16 years old!
+
+echo '<br>';
+
+// ===========================
+
+$house1 = new House('Nurudeen Ajayi', 68, 'Unity');
+echo $house1->getHouse();
 
 
     ?>
