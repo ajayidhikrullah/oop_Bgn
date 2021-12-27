@@ -1,4 +1,5 @@
 <?php
+namespace Person;
     class Person {
         public $name;
         public $age;

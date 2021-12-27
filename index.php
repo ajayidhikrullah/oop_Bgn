@@ -1,24 +1,29 @@
 <?php
-    spl_autoload_register('myAutoloader');
 
-    function myAutoloader($className){
-        $path = "classes/";
-        $ext = ".cls.php";
-        // classes/House.cls.php
-        $fullPath = $path . $className . $ext;
+    // try {
+        spl_autoload_register('myAutoloader');
         
-        //include the path
-        include $fullPath;
+        function myAutoloader($className){
+            $path = "classes/";
+            $ext = ".cls.php";
+            // classes/House.cls.php
+            $fullPath = $path . $className . $ext;
+            
+            //include the path
+            include $fullPath;
 
-    }
+            // if (file_exists($fullPath)) {
+            //     return false;
+            // }
+        }
+    // } 
+    //     catch (\Exception $e) {
+    //     //throw $th;
+    //     echo 'lana!!!';
+    // }
+    
 
 ?>
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -86,10 +91,8 @@ echo $school1->dept;
 */
 
 
-
-
 //autoload Classes
-$person1 = new Person('DHikrullah', 16);
+$person1 = new Person\Person('DHikrullah', 16);
 echo $person1->getPerson(); //should echo out - DHikrullahis 16 years old!
 
 echo '<br>';
