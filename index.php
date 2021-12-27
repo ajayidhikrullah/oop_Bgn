@@ -1,5 +1,16 @@
 <?php
+    spl_autoload_register('myAutoloader');
 
+    function myAutoloader($className){
+        $path = "classes/";
+        $ext = ".cls.php";
+        // classes/House.cls.php
+        $fullPath = $path . $className . $ext;
+        
+        //include the path
+        include $fullPath;
+
+    }
 
 ?>
 
@@ -22,8 +33,6 @@
 
     <?php
 // include "includes/newClass.inc.php";
-include 'classes/person.cls.php';
-include 'classes/house.cls.php';
 
 // $instantiateClassPetMethod = new Pet();
 // echo $instantiateClassPetMethod->owner();
