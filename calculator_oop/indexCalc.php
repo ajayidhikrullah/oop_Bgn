@@ -1,5 +1,5 @@
 <?php
-    decalre (strict_types = 1);
+    declare(strict_types = 1);
     include 'includes/class-autoload.inc.php';
 
 ?>
@@ -17,7 +17,7 @@
     <form action="includes/calc.inc.php" method="post">
         <h3>OOP calculator</h3>
             <input type="number" name="num1" placeholder = "input First number to calculate">
-            <select name="oper">
+            <select name="operator">
                 <option value="add">Addition</option>
                 <option value="sub">Subtraction</option>
                 <option value="div">Division</option>
