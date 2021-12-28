@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 
     // try {
         spl_autoload_register('myAutoloader');
@@ -88,7 +89,7 @@ echo $school1->uniformColor;
 $school1->switchSchoolDept('Commercial');
 echo $school1->dept;
 
-*/
+
 
 
 //autoload Classes
@@ -98,9 +99,27 @@ echo $person1->getPerson(); //should echo out - DHikrullahis 16 years old!
 echo '<br>';
 
 // ===========================
-
+/*
 $house1 = new House('Nurudeen Ajayi', 68, 'Unity');
 echo $house1->getHouse();
+
+*/
+
+$personName = new Person\Person(7);
+
+try{
+    $personName->setName('Hello');
+    echo $personName->getName();
+} catch (TypeError $e) {
+    echo 'Error oooo!: ' . $e;
+}
+
+// echo $personName->getName();
+
+
+
+
+
 
 
     ?>
