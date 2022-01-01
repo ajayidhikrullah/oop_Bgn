@@ -13,26 +13,53 @@
 
         }
 
+        // this functions created to be re-used
+        private function add(){
+            $result = $this->num1 + $this->num2;
+            return $result;
+        }
+
+        private function subtract(){
+            $result = $this->num1 - $this->num2;
+            return $result;
+        }
+
+        private function divide(){
+            $result = $this->num1 / $this->num2;
+            return $result;
+        }
+
+        private function multiply(){
+            $result = $this->num1 * $this->num2;
+            return $result;
+        }
+
+
+
 
         public function calculator(){
             switch ($this->operator) {
                 // var_dump($this->operator);
 
                 case 'add':
-                     $result = $this->num1 + $this->num2;
-                     return $result;
+                    //  $result = $this->num1 + $this->num2;
+                    //  return $result;
+                    return $this->add();
                     break;
                 case 'sub':
-                    $result = $this->num1 - $this->num2;
-                    return $result;
+                    // $result = $this->num1 - $this->num2;
+                    // return $result;
+                    return $this->subtract();
                     break;      
                 case 'div':
-                    $result = $this->num1 / $this->num2;
-                    return $result;
+                    // $result = $this->num1 / $this->num2;
+                    // return $result;
+                    return $this->divide();
                     break;
                 case 'mul':
-                    $result = $this->num1 * $this->num2;
-                    return $result;                
+                    // $result = $this->num1 * $this->num2;
+                    // return $result;                
+                    return $this->multiply();
                 default:
                     echo "Error o...";
                     break;
