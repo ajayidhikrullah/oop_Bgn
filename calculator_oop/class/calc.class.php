@@ -39,21 +39,13 @@
 
         public function calculator(){
             switch ($this->operator) {
-                // var_dump($this->operator);
-
                 case 'add':
-                    //  $result = $this->num1 + $this->num2;
-                    //  return $result;
                     return $this->add();
                     break;
                 case 'sub':
-                    // $result = $this->num1 - $this->num2;
-                    // return $result;
                     return $this->subtract();
                     break;      
                 case 'div':
-                    // $result = $this->num1 / $this->num2;
-                    // return $result;
                     return $this->divide();
                     break;
                 case 'mul':
