@@ -21,6 +21,7 @@
         // fetch firstname in contacts page
         $fetchContact = new Test();
         $fetchContact->getUsers();
+        // $fetchContact->getUsersStat('ADE', 'Kunle@k.com');
 
     ?>
 </body>
