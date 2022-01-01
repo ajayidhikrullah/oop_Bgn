@@ -5,10 +5,10 @@
         private $pwd = '';
         private $dbName = 'zainsecurity';
 
-        proetcted function connect(){
+        protected function connect(){
             $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbName;
             $pdo = new PDO($dsn, $this->user, $this->pwd);
-            $pdo->setAttribute(ADO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             return $pdo;
         }
     }

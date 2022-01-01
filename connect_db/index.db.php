@@ -1,5 +1,5 @@
 <?php
-    include_once 'includes/class.-autoload.php';
+    include_once 'includes/class-autoload.php';
 
 ?>
 
@@ -16,6 +16,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+
+        // fetch firstname in contacts page
+        $fetchContact = new Test();
+        $fetchContact->getUsers();
+
+    ?>
 </body>
 </html>
