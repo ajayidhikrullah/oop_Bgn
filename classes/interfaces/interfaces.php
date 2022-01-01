@@ -1,5 +1,24 @@
 <?php
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 interface PaymentInterface {
     public function PayNow();
 }
@@ -42,8 +61,6 @@ interface PaymentInterface {
     $paymentType = new Cash();
     $buyProduct = new BuyProduct();
     $buyProduct->pay($paymentType);
-
-
-
+*/
 
 ?>
