@@ -8,6 +8,8 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
 
     //instantiate SignUpController class goes
+include "../classes/sign.classes.php";
+include "../classes/signup_contr.classes.php";
 
 
 

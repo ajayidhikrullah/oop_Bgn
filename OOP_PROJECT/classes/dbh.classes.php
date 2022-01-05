@@ -9,6 +9,7 @@
                 return $dbh;
             } catch (PDOEXception $e) {
                 print "Oops, " . $e->getMessage() . "<br>";
+                die();
             }
         }
     }
